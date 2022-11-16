@@ -16,5 +16,5 @@
 // Using the .match() method on a string will return an array with the matched substring, along with its captured groups.
 
 let repeatNum = "42 42 42";
-let reRegex = /change/; // Change this line
+let reRegex = /^(\d+)\s\1\s\1$/; // Change this line
 let result = reRegex.test(repeatNum);
